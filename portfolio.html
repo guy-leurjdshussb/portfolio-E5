@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio - Développeur Informatique</title>
+   <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+   <!-- Effet de neige -->
+   <div class="snowfall" id="snowfall"></div>
+
+   <!-- Header -->
+   <header>
+       <nav>
+           <div class="logo">Portfolio</div>
+           <ul class="nav-links">
+               <li><a href="#accueil">Accueil</a></li>
+               <li><a href="#cv">CV</a></li>
+               <li><a href="#lettre">Lettre</a></li>
+               <li><a href="#tps">TPs</a></li>
+               <li><a href="#projets">Projets</a></li>
+               <li><a href="#veille">Veille</a></li>
+               <li><a href="#contact">Contact</a></li>
+           </ul>
+           <div class="mobile-menu">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+       </nav>
+   </header>
+
+   <!-- Section Accueil -->
+   <section id="accueil" class="section">
+       <div class="container">
+           <div class="hero-content">
+               <h1 class="hero-title">Guy-Landry LOEMBA</h1>
+               <p class="hero-subtitle">
+                   Étudiant en BTS SIO, motivé, sérieux et organisé. Passionné par les infrastructures réseau
+                   et l'administration système, je recherche constamment à perfectionner mes compétences techniques
+                   et à contribuer à des projets innovants.
+               </p>
+               <a href="#cv" class="cta-button">Découvrir mon profil</a>
+           </div>
+       </div>
+   </section>
+
+   <!-- Section CV -->
+   <section id="cv" class="section">
+       <div class="container">
+           <div class="content-section">
+               <h2 class="section-title">Curriculum Vitae</h2>
+               <a href="images_portfolio/cv Guy-Landry Loemba alternance.pdf" class="download-btn" onclick="downloadPDF('cv')">📄 Télécharger le CV (PDF)</a>
+               
+               <div class="cv-grid">
+                   <div class="cv-sidebar">
+                       <h3>Informations Personnelles</h3>
+                       <p><strong>Nom :</strong> Guy-Landry LOEMBA</p>
+                       <p><strong>Email :</strong> guylandryloemba@gmail.com</p>
+                       <p><strong>Téléphone :</strong> 06 69 49 43 78</p>
+                       <p><strong>Adresse :</strong> Bailleul-sur-Thérain (60930)</p>
+                       <br>
+                       <h3>Compétences Techniques</h3>
+                       <ul style="padding-left: 20px;">
+                           <li>Administration réseau (LAN, VLAN)</li>
+                           <li>Wireshark, Packet Tracer</li>
+                           <li>Windows & Linux</li>
+                           <li>Active Directory</li>
+                           <li>VMware, VirtualBox</li>
+                           <li>SQL (MySQL)</li>
+                           <li>Support & Maintenance</li>
+                       </ul>
+                       <br>
+                       <h3>Langues</h3>
+                       <ul style="padding-left: 20px;">
+                           <li>Français (natif)</li>
+                           <li>Anglais (B1-B2)</li>
+                           <li>Espagnol (B1)</li>
+                       </ul>
+                       <br>
+                       <h3>Centres d'intérêt</h3>
+                       <ul style="padding-left: 20px;">
+                           <li>Musculation</li>
+                           <li>Jeux vidéo</li>
+                           <li>Voyages</li>
+                       </ul>
+                   </div>
+                   
+                   <div class="cv-main">
+                       <h3>Formation</h3>
+                       <div style="margin-bottom: 2rem;">
+                           <h4>BTS Services Informatiques aux Organisations (SIO)</h4>
+                           <p><em>2024 - En cours | Lycée Saint-Rémi, Amiens (80)</em></p>
+                           <p>Formation spécialisée en infrastructure réseau, développement et support informatique.</p>
+                       </div>
+                       <div style="margin-bottom: 2rem;">
+                           <h4>Niveau Bac STMG - Spécialité Gestion-Finance</h4>
+                           <p><em>2021 | Lycée Félix Faure, Beauvais (60)</em></p>
+                       </div>
+                       <div style="margin-bottom: 2rem;">
+                           <h4>Diplôme National du Brevet - Mention Bien</h4>
+                           <p><em>2017 | Collège Condorcet, Bresles (60)</em></p>
+                       </div>
+                       
+                       <h3>Expérience Professionnelle</h3>
+                       <div style="margin-bottom: 2rem;">
+                           <h4>Stage - Service Informatique Eiffage</h4>
+                           <p><em>Janvier 2025 | Vélizy (78) - 1 mois</em></p>
+                           <ul style="padding-left: 20px;">
+                               <li>Installation matériel/logiciel</li>
+                               <li>Diagnostic de pannes</li>
+                               <li>Maintenance préventive</li>
+                               <li>Mises à jour et évolutions systèmes</li>
+                           </ul>
+                       </div>
+                       <div style="margin-bottom: 2rem;">
+                           <h4>Taf'Jeunes</h4>
+                           <p><em>2023 | Bailleul-sur-Thérain - 2 semaines</em></p>
+                           <ul style="padding-left: 20px;">
+                               <li>Entretien des espaces publics</li>
+                               <li>Animation périscolaire</li>
+                           </ul>
+                       </div>
+                       <div style="margin-bottom: 2rem;">
+                           <h4>Stage - Mairie de Bailleul-sur-Thérain</h4>
+                           <p><em>2023 | Bailleul-sur-Thérain (60) - 1 semaine</em></p>
+                           <ul style="padding-left: 20px;">
+                               <li>Saisie de données</li>
+                               <li>Mise en forme numérique (Excel)</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Section Lettre de Motivation -->
+   <section id="lettre" class="section">
+       <div class="container">
+           <div class="content-section">
+               <h2 class="section-title">Lettre de Motivation</h2>
+               <div id="letter-fr" class="letter-content">
+                   <a href="images_portfolio/Lettre de motivation stage .pdf" class="download-btn" onclick="downloadPDF('lettre-fr')">📄 Télécharger (PDF)</a>
+                   <div style="background: rgba(0, 0, 0, 0.8); color: #f1f5f9; padding: 2rem; border-radius: 10px; margin-top: 1rem; border: 1px solid rgba(220, 38, 127, 0.3);">
+                       <p><strong>Objet :</strong> Candidature pour un stage en système et réseaux informatique</p>
+                       <br>
+                       <p>Madame, Monsieur,</p>
+                       <br>
+                       <p>Actuellement en première année de BTS Services Informatiques aux Organisations au Lycée Saint-Rémi d'Amiens, je me permets de vous adresser ma candidature pour un stage en informatique au sein de votre entreprise du 5 janvier au 13 février 2025.</p>
+                       <br>
+                       <p>Passionné par l'informatique et les nouvelles technologies, j'ai développé au cours de ma formation des compétences solides en administration réseau (LAN, VLAN), systèmes Windows et Linux, ainsi qu'en bases de données MySQL. Ma maîtrise d'outils comme Wireshark, Packet Tracer et VMware me permet d'aborder efficacement les problématiques d'infrastructure.</p>
+                       <br>
+                       <p>Mon expérience récente chez Eiffage m'a permis de mettre en pratique mes connaissances en installation matériel/logiciel, diagnostic de pannes et maintenance préventive. Je suis quelqu'un de patient, motivé et organisé, qualités essentielles dans le domaine informatique.</p>
+                       <br>
+                       <p>Ce stage représenterait une opportunité précieuse de perfectionner mes compétences techniques dans un environnement professionnel et de contribuer activement aux projets de votre équipe.</p>
+                       <br>
+                       <p>Je serais ravi de vous rencontrer pour discuter de ma candidature.</p>
+                       <br>
+                       <p>Cordialement,<br>Guy-Landry LOEMBA</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Section TPs -->
+   <section id="tps" class="section">
+       <div class="container">
+           <div class="content-section">
+               <h2 class="section-title">Travaux Pratiques</h2>
+               <div class="projects-grid">
+                   <div class="project-card">
+                       <h3 class="project-title">TP1 - Site Web Statique</h3>
+                       <p><strong>Technologies :</strong> Ubuntu, VMware Workstation</p>
+                       <p><strong>Durée :</strong> 2 semaines</p>
+                       <p><strong>Ma contribution :</strong></p>
+                       <ul style="padding-left: 20px;">
+                           <li>Installation et configuration de VMware Workstation sur Ubuntu</li>
+                           <li>Création d'une machine virtuelle à partir d'une image ISO</li>
+                           <li>Configuration des ressources (RAM, disque, processeur) et du réseau virtuel</li>
+                           <li>Vérification du bon fonctionnement et tests de compatibilité du système invité</li>
+                       </ul>
+                       <a href="images_portfolio/Installation de VMware sur Ubuntu.pdf" class="download-btn" onclick="downloadPDF('tp1')">📄 Télécharger le TP (PDF)</a>
+                   </div>
+                   
+                   <div class="project-card">
+                       <h3 class="project-title">TP2 - Application Web Dynamique</h3>
+                       <p><strong>Technologies :</strong> JavaScript, PHP, MySQL</p>
+                       <p><strong>Durée :</strong> 4 semaines</p>
+                       <p><strong>Ma contribution :</strong></p>
+                       <ul style="padding-left: 20px;">
+                           <li>Développement de l'interface utilisateur</li>
+                           <li>Implémentation des fonctionnalités CRUD</li>
+                           <li>Conception de la base de données</li>
+                           <li>Tests et débogage</li>
+                       </ul>
+                       <a href="images_portfolio/cv final guylandry.pdf" class="download-btn" onclick="downloadPDF('tp2')">📄 Télécharger le TP (PDF)</a>
+                   </div>
+                   
+                   <div class="project-card">
+                       <h3 class="project-title">TP3 - API REST</h3>
+                       <p><strong>Technologies :</strong> Node.js, Express, MongoDB</p>
+                       <p><strong>Durée :</strong> 3 semaines</p>
+                       <p><strong>Ma contribution :</strong></p>
+                       <ul style="padding-left: 20px;">
+                           <li>Architecture de l'API RESTful</li>
+                           <li>Implémentation des endpoints</li>
+                           <li>Gestion de l'authentification JWT</li>
+                           <li>Documentation avec Swagger</li>
+                       </ul>
+                       <a href="images_portfolio/cv final guylandry.pdf" class="download-btn" onclick="downloadPDF('tp3')">📄 Télécharger le TP (PDF)</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Section Projets -->
+   <section id="projets" class="section">
+       <div class="container">
+           <div class="content-section">
+               <h2 class="section-title">Mes Projets</h2>
+               <div class="projects-grid">
+                   <div class="project-card">
+                       <h3 class="project-title">🛍️ E-Commerce Platform</h3>
+                       <p><strong>Technologies :</strong> React, Node.js, Stripe</p>
+                       <p><strong>Mon rôle :</strong> Développeur Full-Stack</p>
+                       <p><strong>Réalisations :</strong></p>
+                       <ul style="padding-left: 20px;">
+                           <li>Développement du front-end React</li>
+                           <li>API backend avec Node.js</li>
+                           <li>Intégration paiement Stripe</li>
+                           <li>Tests unitaires et d'intégration</li>
+                       </ul>
+                       <br>
+                       <a href="#" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Voir le projet</a>
+                   </div>
+                   
+                   <div class="project-card">
+                       <h3 class="project-title">📱 Mobile Task Manager</h3>
+                       <p><strong>Technologies :</strong> React Native, Firebase</p>
+                       <p><strong>Mon rôle :</strong> Développeur Mobile</p>
+                       <p><strong>Réalisations :</strong></p>
+                       <ul style="padding-left: 20px;">
+                           <li>Interface utilisateur intuitive</li>
+                           <li>Synchronisation en temps réel</li>
+                           <li>Notifications push</li>
+                           <li>Mode hors ligne</li>
+                       </ul>
+                       <br>
+                       <a href="#" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Voir le projet</a>
+                   </div>
+                   
+                   <div class="project-card">
+                       <h3 class="project-title">🎮 Web Game</h3>
+                       <p><strong>Technologies :</strong> JavaScript Canvas, WebGL</p>
+                       <p><strong>Mon rôle :</strong> Game Developer</p>
+                       <p><strong>Réalisations :</strong></p>
+                       <ul style="padding-left: 20px;">
+                           <li>Moteur de jeu JavaScript</li>
+                           <li>Graphismes 2D avancés</li>
+                           <li>Système de score en ligne</li>
+                           <li>Optimisation des performances</li>
+                       </ul>
+                       <br>
+                       <a href="#" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Voir le projet</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Section Veille -->
+   <section id="veille" class="section">
+       <div class="container">
+           <div class="content-section">
+               <h2 class="section-title">Veille Technologique</h2>
+               <div class="projects-grid">
+                   <div class="project-card">
+                       <h3 class="project-title">🤖 Intelligence Artificielle</h3>
+                       <p><strong>Période de veille :</strong> 6 mois</p>
+                       <p><strong>Sources :</strong> ArXiv, Google AI Blog, OpenAI</p>
+                       <p><strong>Résultats :</strong></p>
+                       <ul style="padding-left: 20px;">
+                           <li>Analyse de 50+ articles de recherche</li>
+                           <li>Veille sur GPT et modèles de langage</li>
+                           <li>Étude des applications en développement</li>
+                           <li>Rapport de synthèse mensuel</li>
+                       </ul>
+                       <a href="#" class="download-btn">📄 Télécharger le rapport</a>
+                   </div>
+                   
+                   <div class="project-card">
+                       <h3 class="project-title">🌐 Technologies Web</h3>
+                       <p><strong>Période de veille :</strong> 12 mois</p>
+                       <p><strong>Sources :</strong> MDN, CSS-Tricks, Smashing Magazine</p>
+                       <p><strong>Résultats :</strong></p>
+                       <ul style="padding-left: 20px;">
+                           <li>Suivi des évolutions HTML/CSS</li>
+                           <li>Nouvelles frameworks JavaScript</li>
+                           <li>Tendances UX/UI design</li>
+                           <li>Outils de développement modernes</li>
+                       </ul>
+                       <a href="#" class="download-btn">📄 Télécharger le rapport</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Section Contact -->
+   <section id="contact" class="section">
+       <div class="container">
+           <div class="content-section">
+               <h2 class="section-title">Contact</h2>
+               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                   <div>
+                       <h3>Mes Coordonnées</h3>
+                       <div style="background: rgba(0, 0, 0, 0.7); padding: 2rem; border-radius: 15px; margin: 1rem 0; border: 1px solid rgba(220, 38, 127, 0.3);">
+                           <p style="color: #f1f5f9;"><strong>📧 Email :</strong> guylandryloemba@gmail.com</p>
+                           <p style="color: #f1f5f9;"><strong>📱 Téléphone :</strong> 06 69 49 43 78</p>
+                           <p style="color: #f1f5f9;"><strong>📍 Localisation :</strong> Bailleul-sur-Thérain, France</p>
+                           <p style="color: #f1f5f9;"><strong>💼 LinkedIn :</strong> <a href="#" style="color: #3b82f6;">linkedin.com/in/guy-landry-loemba</a></p>
+                           <p style="color: #f1f5f9;"><strong>🐙 GitHub :</strong> <a href="#" style="color: #3b82f6;">github.com/guy-landry</a></p>
+                       </div>
+                   </div>
+                   
+                   <div class="contact-form">
+                       <h3>Envoyez-moi un message</h3>
+                       <form onsubmit="handleSubmit(event)">
+                           <div class="form-group">
+                               <label for="name">Nom</label>
+                               <input type="text" id="name" name="name" required>
+                           </div>
+                           <div class="form-group">
+                               <label for="email">Email</label>
+                               <input type="email" id="email" name="email" required>
+                           </div>
+                           <div class="form-group">
+                               <label for="subject">Sujet</label>
+                               <input type="text" id="subject" name="subject" required>
+                           </div>
+                           <div class="form-group">
+                               <label for="message">Message</label>
+                               <textarea id="message" name="message" rows="5" required></textarea>
+                           </div>
+                           <button type="submit" class="cta-button">Envoyer le message</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <script>
+       // Effet de neige
+       function createSnowfall() {
+           const snowfall = document.getElementById('snowfall');
+           const snowflakeCount = 50;
+           for (let i = 0; i < snowflakeCount; i++) {
+               const snowflake = document.createElement('div');
+               snowflake.className = 'snowflake';
+               snowflake.innerHTML = '❄';
+               snowflake.style.left = Math.random() * 100 + '%';
+               snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+               snowflake.style.animationDelay = Math.random() * 5 + 's';
+               snowfall.appendChild(snowflake);
+           }
+       }
+
+       // Navigation fluide
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+               e.preventDefault();
+               const target = document.querySelector(this.getAttribute('href'));
+               if (target) {
+                   target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+               }
+           });
+       });
+
+       // Simulation de téléchargement PDF
+       function downloadPDF(type) {
+           alert(`Téléchargement du ${type} en cours... (Fonctionnalité à implémenter avec un vrai serveur)`);
+       }
+
+       // Gestion du formulaire de contact
+       function handleSubmit(event) {
+           event.preventDefault();
+           alert('Message envoyé avec succès ! (Fonctionnalité à implémenter avec un vrai serveur)');
+           event.target.reset();
+       }
+
+       // Animation au scroll
+       function animateOnScroll() {
+           const elements = document.querySelectorAll('.content-section, .project-card');
+           const observer = new IntersectionObserver((entries) => {
+               entries.forEach(entry => {
+                   if (entry.isIntersecting) {
+                       entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                       observer.unobserve(entry.target);
+                   }
+               });
+           }, { threshold: 0.1 });
+           elements.forEach(el => observer.observe(el));
+       }
+
+       // Lancement
+       createSnowfall();
+       animateOnScroll();
+   </script>
+</body>
+</html>
