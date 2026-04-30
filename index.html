@@ -3,13 +3,13 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Portfolio - Développeur Informatique</title>
+   <title>Portfolio - Guy-Landry LOEMBA</title>
    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
    <!-- Effet de neige -->
    <div class="snowfall" id="snowfall"></div>
-
+ 
    <!-- Header -->
    <header>
        <nav>
@@ -18,19 +18,27 @@
                <li><a href="#accueil">Accueil</a></li>
                <li><a href="#cv">CV</a></li>
                <li><a href="#lettre">Lettre</a></li>
-               <li><a href="#tps">TPs</a></li>
-               <li><a href="#projets">Projets</a></li>
+               <li><a href="#situations">Situations Pro</a></li>
                <li><a href="#veille">Veille</a></li>
                <li><a href="#contact">Contact</a></li>
            </ul>
-           <div class="mobile-menu">
+           <div class="mobile-menu" id="mobileMenuBtn">
                <span></span>
                <span></span>
                <span></span>
            </div>
        </nav>
+       <!-- Menu mobile déroulant -->
+       <ul class="nav-mobile" id="navMobile">
+           <li><a href="#accueil">Accueil</a></li>
+           <li><a href="#cv">CV</a></li>
+           <li><a href="#lettre">Lettre</a></li>
+           <li><a href="#situations">Situations Pro</a></li>
+           <li><a href="#veille">Veille</a></li>
+           <li><a href="#contact">Contact</a></li>
+       </ul>
    </header>
-
+ 
    <!-- Section Accueil -->
    <section id="accueil" class="section">
        <div class="container">
@@ -45,14 +53,14 @@
            </div>
        </div>
    </section>
-
+ 
    <!-- Section CV -->
    <section id="cv" class="section">
        <div class="container">
            <div class="content-section">
                <h2 class="section-title">Curriculum Vitae</h2>
-              <a href="images_portfolio/cv Guy-Landry Loemba alternance.pdf" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le CV (PDF)</a>
-               
+               <a href="images_portfolio/cv Guy-Landry Loemba alternance.pdf" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le CV (PDF)</a>
+ 
                <div class="cv-grid">
                    <div class="cv-sidebar">
                        <h3>Informations Personnelles</h3>
@@ -86,7 +94,7 @@
                            <li>Voyages</li>
                        </ul>
                    </div>
-                   
+ 
                    <div class="cv-main">
                        <h3>Formation</h3>
                        <div style="margin-bottom: 2rem;">
@@ -102,7 +110,7 @@
                            <h4>Diplôme National du Brevet - Mention Bien</h4>
                            <p><em>2017 | Collège Condorcet, Bresles (60)</em></p>
                        </div>
-                       
+ 
                        <h3>Expérience Professionnelle</h3>
                        <div style="margin-bottom: 2rem;">
                            <h4>Stage - Service Informatique Eiffage</h4>
@@ -135,15 +143,15 @@
            </div>
        </div>
    </section>
-
+ 
    <!-- Section Lettre de Motivation -->
    <section id="lettre" class="section">
        <div class="container">
            <div class="content-section">
                <h2 class="section-title">Lettre de Motivation</h2>
                <div id="letter-fr" class="letter-content">
-                  <a href="images_portfolio/Lettre de motivation Guy-landry Alternance.pdf" class="download-btn" target="_blank" rel="noopener">📄 Télécharger (PDF)</a>
-                   <div style="background: rgba(0, 0, 0, 0.8); color: #f1f5f9; padding: 2rem; border-radius: 10px; margin-top: 1rem; border: 1px solid rgba(220, 38, 127, 0.3);">
+                   <a href="images_portfolio/Lettre de motivation Guy-landry Alternance.pdf" class="download-btn" target="_blank" rel="noopener">📄 Télécharger (PDF)</a>
+                   <div style="background: rgba(0,0,0,0.8); color: #f1f5f9; padding: 2rem; border-radius: 10px; margin-top: 1rem; border: 1px solid rgba(220,38,127,0.3);">
                        <p><strong>Objet :</strong> Candidature pour un stage en système et réseaux informatique</p>
                        <br>
                        <p>Madame, Monsieur,</p>
@@ -164,236 +172,211 @@
            </div>
        </div>
    </section>
-<!-- Section Situations Professionnelles -->
-<section id="projets" class="section">
-    <div class="container">
-        <div class="content-section">
-            <h2 class="section-title">Situations Professionnelles</h2>
-
-            <!-- SP1 - Active Directory -->
-            <div class="sp-card" id="sp1">
-                <div class="sp-header">
-                    <div class="sp-badge">SP N°1</div>
-                    <div class="sp-icon">🖥️</div>
-                    <div class="sp-header-text">
-                        <h3 class="sp-title">Active Directory</h3>
-                        <p class="sp-subtitle">Mise en place d'une infrastructure Active Directory & Gestion des utilisateurs et des droits d'accès</p>
-                    </div>
-                </div>
-
-                <div class="sp-body">
-                    <div class="sp-col">
-                        <div class="sp-block">
-                            <h4>🎯 Contexte</h4>
-                            <p>Déploiement et administration d'un annuaire Active Directory dans un environnement Windows Server, dans le cadre d'un TP en infrastructure réseau au Lycée Saint-Rémi.</p>
-                        </div>
-                        <div class="sp-block">
-                            <h4>🛠️ Compétences mobilisées</h4>
-                            <ul>
-                                <li>Installation et configuration de Windows Server</li>
-                                <li>Création et gestion des comptes utilisateurs et groupes</li>
-                                <li>Définition des droits d'accès et stratégies GPO</li>
-                                <li>Gestion des unités d'organisation (OU)</li>
-                                <li>Virtualisation avec VMware</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sp-col">
-                        <div class="sp-block">
-                            <h4>📋 Réalisations</h4>
-                            <ul>
-                                <li>Mise en place d'un domaine Active Directory fonctionnel</li>
-                                <li>Création d'une arborescence d'OU cohérente</li>
-                                <li>Attribution des rôles et permissions par groupe</li>
-                                <li>Application de stratégies de groupe (GPO)</li>
-                                <li>Tests et validation de l'infrastructure</li>
-                            </ul>
-                        </div>
-                        <div class="sp-tags">
-                            <span class="tag">Windows Server</span>
-                            <span class="tag">Active Directory</span>
-                            <span class="tag">GPO</span>
-                            <span class="tag">VMware</span>
-                            <span class="tag">Réseau LAN</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sp-footer">
-                    <a href="#" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le rapport</a>
-                </div>
-            </div>
-
-            <!-- SP2 - Icinga -->
-            <div class="sp-card" id="sp2">
-                <div class="sp-header sp-header--blue">
-                    <div class="sp-badge sp-badge--blue">SP N°2</div>
-                    <div class="sp-icon">📡</div>
-                    <div class="sp-header-text">
-                        <h3 class="sp-title">Icinga</h3>
-                        <p class="sp-subtitle">Supervision réseau & Monitoring d'une infrastructure avec Icinga</p>
-                    </div>
-                </div>
-
-                <div class="sp-body">
-                    <div class="sp-col">
-                        <div class="sp-block">
-                            <h4>🎯 Contexte</h4>
-                            <p>Mise en œuvre d'un système de supervision réseau avec Icinga2 pour monitorer les équipements et services d'une infrastructure informatique simulée.</p>
-                        </div>
-                        <div class="sp-block">
-                            <h4>🛠️ Compétences mobilisées</h4>
-                            <ul>
-                                <li>Installation et configuration d'Icinga2</li>
-                                <li>Supervision des hôtes et services réseau</li>
-                                <li>Configuration des alertes et notifications</li>
-                                <li>Administration Linux (Ubuntu/Debian)</li>
-                                <li>Analyse des métriques réseau</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sp-col">
-                        <div class="sp-block">
-                            <h4>📋 Réalisations</h4>
-                            <ul>
-                                <li>Déploiement d'Icinga2 sur serveur Linux</li>
-                                <li>Intégration de l'interface web Icinga Web 2</li>
-                                <li>Ajout et configuration des hôtes à superviser</li>
-                                <li>Paramétrage des seuils d'alerte critique/warning</li>
-                                <li>Mise en place de rapports de disponibilité</li>
-                            </ul>
-                        </div>
-                        <div class="sp-tags">
-                            <span class="tag tag--blue">Icinga2</span>
-                            <span class="tag tag--blue">Linux</span>
-                            <span class="tag tag--blue">Supervision</span>
-                            <span class="tag tag--blue">Monitoring</span>
-                            <span class="tag tag--blue">Réseau</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sp-footer">
-                    <a href="#" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le rapport</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-   <!-- Section Projets -->
-   <section id="projets" class="section">
+ 
+   <!-- Section Situations Professionnelles -->
+   <section id="situations" class="section">
        <div class="container">
            <div class="content-section">
-               <h2 class="section-title">Mes Projets</h2>
-               <div class="projects-grid">
-                   <div class="project-card">
-                       <h3 class="project-title">🛍️ E-Commerce Platform</h3>
-                       <p><strong>Technologies :</strong> React, Node.js, Stripe</p>
-                       <p><strong>Mon rôle :</strong> Développeur Full-Stack</p>
-                       <p><strong>Réalisations :</strong></p>
-                       <ul style="padding-left: 20px;">
-                           <li>Développement du front-end React</li>
-                           <li>API backend avec Node.js</li>
-                           <li>Intégration paiement Stripe</li>
-                           <li>Tests unitaires et d'intégration</li>
-                       </ul>
-                       <br>
-                       <a href="#" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Voir le projet</a>
+               <h2 class="section-title">Situations Professionnelles</h2>
+ 
+               <!-- SP1 - Active Directory -->
+               <div class="sp-card" id="sp1">
+                   <div class="sp-header">
+                       <div class="sp-badge">SP N°1</div>
+                       <div class="sp-icon">🖥️</div>
+                       <div class="sp-header-text">
+                           <h3 class="sp-title">Active Directory</h3>
+                           <p class="sp-subtitle">Mise en place d'une infrastructure Active Directory & Gestion des utilisateurs et des droits d'accès</p>
+                       </div>
                    </div>
-                   
-                   <div class="project-card">
-                       <h3 class="project-title">📱 Mobile Task Manager</h3>
-                       <p><strong>Technologies :</strong> React Native, Firebase</p>
-                       <p><strong>Mon rôle :</strong> Développeur Mobile</p>
-                       <p><strong>Réalisations :</strong></p>
-                       <ul style="padding-left: 20px;">
-                           <li>Interface utilisateur intuitive</li>
-                           <li>Synchronisation en temps réel</li>
-                           <li>Notifications push</li>
-                           <li>Mode hors ligne</li>
-                       </ul>
-                       <br>
-                       <a href="#" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Voir le projet</a>
+                   <div class="sp-body">
+                       <div class="sp-col">
+                           <div class="sp-block">
+                               <h4>🎯 Contexte</h4>
+                               <p>Déploiement et administration d'un annuaire Active Directory dans un environnement Windows Server, dans le cadre d'un TP en infrastructure réseau au Lycée Saint-Rémi.</p>
+                           </div>
+                           <div class="sp-block">
+                               <h4>🛠️ Compétences mobilisées</h4>
+                               <ul>
+                                   <li>Installation et configuration de Windows Server</li>
+                                   <li>Création et gestion des comptes utilisateurs et groupes</li>
+                                   <li>Définition des droits d'accès et stratégies GPO</li>
+                                   <li>Gestion des unités d'organisation (OU)</li>
+                                   <li>Virtualisation avec VMware</li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="sp-col">
+                           <div class="sp-block">
+                               <h4>📋 Réalisations</h4>
+                               <ul>
+                                   <li>Mise en place d'un domaine Active Directory fonctionnel</li>
+                                   <li>Création d'une arborescence d'OU cohérente</li>
+                                   <li>Attribution des rôles et permissions par groupe</li>
+                                   <li>Application de stratégies de groupe (GPO)</li>
+                                   <li>Tests et validation de l'infrastructure</li>
+                               </ul>
+                           </div>
+                           <div class="sp-tags">
+                               <span class="tag">Windows Server</span>
+                               <span class="tag">Active Directory</span>
+                               <span class="tag">GPO</span>
+                               <span class="tag">VMware</span>
+                               <span class="tag">Réseau LAN</span>
+                           </div>
+                       </div>
                    </div>
-                   
-                   <div class="project-card">
-                       <h3 class="project-title">🎮 Web Game</h3>
-                       <p><strong>Technologies :</strong> JavaScript Canvas, WebGL</p>
-                       <p><strong>Mon rôle :</strong> Game Developer</p>
-                       <p><strong>Réalisations :</strong></p>
-                       <ul style="padding-left: 20px;">
-                           <li>Moteur de jeu JavaScript</li>
-                           <li>Graphismes 2D avancés</li>
-                           <li>Système de score en ligne</li>
-                           <li>Optimisation des performances</li>
-                       </ul>
-                       <br>
-                       <a href="#" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Voir le projet</a>
+                   <div class="sp-footer">
+                       <a href="#" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le rapport</a>
                    </div>
                </div>
+ 
+               <!-- SP2 - Icinga -->
+               <div class="sp-card sp-card--blue" id="sp2">
+                   <div class="sp-header sp-header--blue">
+                       <div class="sp-badge sp-badge--blue">SP N°2</div>
+                       <div class="sp-icon">📡</div>
+                       <div class="sp-header-text">
+                           <h3 class="sp-title sp-title--blue">Icinga</h3>
+                           <p class="sp-subtitle">Supervision réseau & Monitoring d'une infrastructure avec Icinga</p>
+                       </div>
+                   </div>
+                   <div class="sp-body">
+                       <div class="sp-col">
+                           <div class="sp-block sp-block--blue">
+                               <h4>🎯 Contexte</h4>
+                               <p>Mise en œuvre d'un système de supervision réseau avec Icinga2 pour monitorer les équipements et services d'une infrastructure informatique simulée.</p>
+                           </div>
+                           <div class="sp-block sp-block--blue">
+                               <h4>🛠️ Compétences mobilisées</h4>
+                               <ul>
+                                   <li>Installation et configuration d'Icinga2</li>
+                                   <li>Supervision des hôtes et services réseau</li>
+                                   <li>Configuration des alertes et notifications</li>
+                                   <li>Administration Linux (Ubuntu/Debian)</li>
+                                   <li>Analyse des métriques réseau</li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="sp-col">
+                           <div class="sp-block sp-block--blue">
+                               <h4>📋 Réalisations</h4>
+                               <ul>
+                                   <li>Déploiement d'Icinga2 sur serveur Linux</li>
+                                   <li>Intégration de l'interface web Icinga Web 2</li>
+                                   <li>Ajout et configuration des hôtes à superviser</li>
+                                   <li>Paramétrage des seuils d'alerte critique/warning</li>
+                                   <li>Mise en place de rapports de disponibilité</li>
+                               </ul>
+                           </div>
+                           <div class="sp-tags">
+                               <span class="tag tag--blue">Icinga2</span>
+                               <span class="tag tag--blue">Linux</span>
+                               <span class="tag tag--blue">Supervision</span>
+                               <span class="tag tag--blue">Monitoring</span>
+                               <span class="tag tag--blue">Réseau</span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="sp-footer">
+                       <a href="#" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le rapport</a>
+                   </div>
+               </div>
+ 
            </div>
        </div>
    </section>
-
-   <!-- Section Veille -->
+ 
+   <!-- Section Veille Technologique -->
    <section id="veille" class="section">
        <div class="container">
            <div class="content-section">
                <h2 class="section-title">Veille Technologique</h2>
-               <div class="projects-grid">
-                   <div class="project-card">
-                       <h3 class="project-title">🤖 Intelligence Artificielle</h3>
-                       <p><strong>Période de veille :</strong> 6 mois</p>
-                       <p><strong>Sources :</strong> ArXiv, Google AI Blog, OpenAI</p>
-                       <p><strong>Résultats :</strong></p>
-                       <ul style="padding-left: 20px;">
-                           <li>Analyse de 50+ articles de recherche</li>
-                           <li>Veille sur GPT et modèles de langage</li>
-                           <li>Étude des applications en développement</li>
-                           <li>Rapport de synthèse mensuel</li>
-                       </ul>
-                       <a href="#" class="download-btn">📄 Télécharger le rapport</a>
+ 
+               <div class="veille-card">
+                   <div class="veille-header">
+                       <div class="veille-number">01</div>
+                       <div class="veille-header-content">
+                           <div class="veille-label">Intelligence Artificielle & Société</div>
+                           <h3 class="veille-title">L'IA dans l'accompagnement des personnes âgées</h3>
+                           <p class="veille-problematique">
+                               Entre amélioration du quotidien et risque de dépendance technologique
+                           </p>
+                       </div>
+                       <div class="veille-icon">🤖</div>
                    </div>
-                   
-                   <div class="project-card">
-                       <h3 class="project-title">🌐 Technologies Web</h3>
-                       <p><strong>Période de veille :</strong> 12 mois</p>
-                       <p><strong>Sources :</strong> MDN, CSS-Tricks, Smashing Magazine</p>
-                       <p><strong>Résultats :</strong></p>
-                       <ul style="padding-left: 20px;">
-                           <li>Suivi des évolutions HTML/CSS</li>
-                           <li>Nouvelles frameworks JavaScript</li>
-                           <li>Tendances UX/UI design</li>
-                           <li>Outils de développement modernes</li>
-                       </ul>
-                       <a href="#" class="download-btn">📄 Télécharger le rapport</a>
+ 
+                   <div class="veille-body">
+                       <div class="veille-col">
+                           <div class="veille-block">
+                               <h4>📌 Contexte & Problématique</h4>
+                               <p>L'intelligence artificielle s'impose de plus en plus dans le domaine de la santé et du maintien à domicile des personnes âgées : assistants vocaux, capteurs de détection de chutes, robots d'assistance, plateformes de suivi médical à distance. Si ces technologies offrent des bénéfices réels, elles soulèvent aussi des questions fondamentales sur l'autonomie humaine.</p>
+                               <p style="margin-top: 1rem;"><strong style="color: #f97316;">Problématique :</strong> Dans quelle mesure l'intégration de l'IA dans le maintien à domicile des personnes âgées améliore-t-elle leur qualité de vie, sans pour autant générer une dépendance technologique qui fragiliserait leur autonomie ?</p>
+                           </div>
+                       </div>
+ 
+                       <div class="veille-col">
+                           <div class="veille-block">
+                               <h4>✅ Bénéfices identifiés</h4>
+                               <ul>
+                                   <li>Sécurité renforcée grâce aux capteurs de détection de chutes</li>
+                                   <li>Maintien de l'autonomie par les assistants vocaux (rappels, appels)</li>
+                                   <li>Suivi médical à distance et alertes en temps réel</li>
+                                   <li>Lutte contre l'isolement via les interfaces de communication</li>
+                                   <li>Soulagement des aidants familiaux et soignants</li>
+                               </ul>
+                           </div>
+                           <div class="veille-block">
+                               <h4>⚠️ Limites & Risques</h4>
+                               <ul>
+                                   <li>Dépendance croissante à la technologie et perte de réflexes naturels</li>
+                                   <li>Fracture numérique chez les personnes peu familières avec le digital</li>
+                                   <li>Risques sur la vie privée et la protection des données de santé</li>
+                                   <li>Déshumanisation possible du lien social et médical</li>
+                                   <li>Coût d'accès et inégalités d'équipement entre territoires</li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+ 
+                   <div class="veille-sources">
+                       <span class="veille-source-label">Sources consultées :</span>
+                       <span class="veille-source-tag">OMS</span>
+                       <span class="veille-source-tag">CNIL</span>
+                       <span class="veille-source-tag">ArXiv</span>
+                       <span class="veille-source-tag">Le Monde</span>
+                       <span class="veille-source-tag">MIT Technology Review</span>
+                       <span class="veille-source-tag">France Info Santé</span>
+                   </div>
+ 
+                   <div class="veille-footer">
+                       <a href="#" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le rapport complet</a>
                    </div>
                </div>
+ 
            </div>
        </div>
    </section>
-
+ 
    <!-- Section Contact -->
    <section id="contact" class="section">
        <div class="container">
            <div class="content-section">
                <h2 class="section-title">Contact</h2>
-               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+               <div class="contact-grid">
                    <div>
-                       <h3>Mes Coordonnées</h3>
-                       <div style="background: rgba(0, 0, 0, 0.7); padding: 2rem; border-radius: 15px; margin: 1rem 0; border: 1px solid rgba(220, 38, 127, 0.3);">
-                           <p style="color: #f1f5f9;"><strong>📧 Email :</strong> guylandryloemba@gmail.com</p>
-                           <p style="color: #f1f5f9;"><strong>📱 Téléphone :</strong> 06 69 49 43 78</p>
-                           <p style="color: #f1f5f9;"><strong>📍 Localisation :</strong> Bailleul-sur-Thérain, France</p>
-                           <p style="color: #f1f5f9;"><strong>💼 LinkedIn :</strong> <a href="#" style="color: #3b82f6;">linkedin.com/in/guy-landry-loemba</a></p>
-                           <p style="color: #f1f5f9;"><strong>🐙 GitHub :</strong> <a href="#" style="color: #3b82f6;">github.com/guy-landry</a></p>
+                       <h3 style="margin-bottom: 1rem; color: #f1f5f9;">Mes Coordonnées</h3>
+                       <div class="contact-info-box">
+                           <p><strong>📧 Email :</strong> guylandryloemba@gmail.com</p>
+                           <p><strong>📱 Téléphone :</strong> 06 69 49 43 78</p>
+                           <p><strong>📍 Localisation :</strong> Bailleul-sur-Thérain, France</p>
+                           <p><strong>💼 LinkedIn :</strong> <a href="#" style="color: #3b82f6;">linkedin.com/in/guy-landry-loemba</a></p>
+                           <p><strong>🐙 GitHub :</strong> <a href="#" style="color: #3b82f6;">github.com/guy-landry</a></p>
                        </div>
                    </div>
-                   
+ 
                    <div class="contact-form">
-                       <h3>Envoyez-moi un message</h3>
+                       <h3 style="margin-bottom: 1.5rem; color: #f1f5f9;">Envoyez-moi un message</h3>
                        <form onsubmit="handleSubmit(event)">
                            <div class="form-group">
                                <label for="name">Nom</label>
@@ -418,13 +401,12 @@
            </div>
        </div>
    </section>
-
+ 
    <script>
        // Effet de neige
        function createSnowfall() {
            const snowfall = document.getElementById('snowfall');
-           const snowflakeCount = 50;
-           for (let i = 0; i < snowflakeCount; i++) {
+           for (let i = 0; i < 50; i++) {
                const snowflake = document.createElement('div');
                snowflake.className = 'snowflake';
                snowflake.innerHTML = '❄';
@@ -434,28 +416,39 @@
                snowfall.appendChild(snowflake);
            }
        }
-
-       // Navigation fluide
+ 
+       // Navigation fluide (ignore les liens externes)
        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
            anchor.addEventListener('click', function (e) {
+               const href = this.getAttribute('href');
+               if (href === '#') return;
                e.preventDefault();
-               const target = document.querySelector(this.getAttribute('href'));
+               const target = document.querySelector(href);
                if (target) {
                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                   // Fermer le menu mobile si ouvert
+                   navMobile.classList.remove('nav-mobile--open');
                }
            });
        });
-
-       // Gestion du formulaire de contact
+ 
+       // Menu mobile toggle
+       const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+       const navMobile = document.getElementById('navMobile');
+       mobileMenuBtn.addEventListener('click', () => {
+           navMobile.classList.toggle('nav-mobile--open');
+       });
+ 
+       // Formulaire contact
        function handleSubmit(event) {
            event.preventDefault();
            alert('Message envoyé avec succès ! (Fonctionnalité à implémenter avec un vrai serveur)');
            event.target.reset();
        }
-
+ 
        // Animation au scroll
        function animateOnScroll() {
-           const elements = document.querySelectorAll('.content-section, .project-card');
+           const elements = document.querySelectorAll('.content-section, .sp-card, .veille-card');
            const observer = new IntersectionObserver((entries) => {
                entries.forEach(entry => {
                    if (entry.isIntersecting) {
@@ -463,11 +456,10 @@
                        observer.unobserve(entry.target);
                    }
                });
-           }, { threshold: 0.1 });
+           }, { threshold: 0.08 });
            elements.forEach(el => observer.observe(el));
        }
-
-       // Lancement
+ 
        createSnowfall();
        animateOnScroll();
    </script>
