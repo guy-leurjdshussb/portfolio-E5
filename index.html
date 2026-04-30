@@ -164,58 +164,123 @@
            </div>
        </div>
    </section>
+<!-- Section Situations Professionnelles -->
+<section id="projets" class="section">
+    <div class="container">
+        <div class="content-section">
+            <h2 class="section-title">Situations Professionnelles</h2>
 
-   <!-- Section TPs -->
-   <section id="tps" class="section">
-       <div class="container">
-           <div class="content-section">
-               <h2 class="section-title">Travaux Pratiques</h2>
-               <div class="projects-grid">
-                   <div class="project-card">
-                       <h3 class="project-title">TP1 - Site Web Statique</h3>
-                       <p><strong>Technologies :</strong> Ubuntu, VMware Workstation</p>
-                       <p><strong>Durée :</strong> 2 semaines</p>
-                       <p><strong>Ma contribution :</strong></p>
-                       <ul style="padding-left: 20px;">
-                           <li>Installation et configuration de VMware Workstation sur Ubuntu</li>
-                           <li>Création d'une machine virtuelle à partir d'une image ISO</li>
-                           <li>Configuration des ressources (RAM, disque, processeur) et du réseau virtuel</li>
-                           <li>Vérification du bon fonctionnement et tests de compatibilité du système invité</li>
-                       </ul>
-                       <a href="images_portfolio/Installation de VMware sur Ubuntu.pdf" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le TP (PDF)</a>
-                   </div>
-                   
-                   <div class="project-card">
-                       <h3 class="project-title">TP2 - Application Web Dynamique</h3>
-                       <p><strong>Technologies :</strong> JavaScript, PHP, MySQL</p>
-                       <p><strong>Durée :</strong> 4 semaines</p>
-                       <p><strong>Ma contribution :</strong></p>
-                       <ul style="padding-left: 20px;">
-                           <li>Développement de l'interface utilisateur</li>
-                           <li>Implémentation des fonctionnalités CRUD</li>
-                           <li>Conception de la base de données</li>
-                           <li>Tests et débogage</li>
-                       </ul>
-                       <a href="images_portfolio/Installation de VMware sur Ubuntu.pdf" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le TP (PDF)</a>
-                   </div>
-                   
-                   <div class="project-card">
-                       <h3 class="project-title">TP3 - API REST</h3>
-                       <p><strong>Technologies :</strong> Node.js, Express, MongoDB</p>
-                       <p><strong>Durée :</strong> 3 semaines</p>
-                       <p><strong>Ma contribution :</strong></p>
-                       <ul style="padding-left: 20px;">
-                           <li>Architecture de l'API RESTful</li>
-                           <li>Implémentation des endpoints</li>
-                           <li>Gestion de l'authentification JWT</li>
-                           <li>Documentation avec Swagger</li>
-                       </ul>
-                       <a href="images_portfolio/Installation de VMware sur Ubuntu.pdf" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le TP (PDF)</a>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
+            <!-- SP1 - Active Directory -->
+            <div class="sp-card" id="sp1">
+                <div class="sp-header">
+                    <div class="sp-badge">SP N°1</div>
+                    <div class="sp-icon">🖥️</div>
+                    <div class="sp-header-text">
+                        <h3 class="sp-title">Active Directory</h3>
+                        <p class="sp-subtitle">Mise en place d'une infrastructure Active Directory & Gestion des utilisateurs et des droits d'accès</p>
+                    </div>
+                </div>
+
+                <div class="sp-body">
+                    <div class="sp-col">
+                        <div class="sp-block">
+                            <h4>🎯 Contexte</h4>
+                            <p>Déploiement et administration d'un annuaire Active Directory dans un environnement Windows Server, dans le cadre d'un TP en infrastructure réseau au Lycée Saint-Rémi.</p>
+                        </div>
+                        <div class="sp-block">
+                            <h4>🛠️ Compétences mobilisées</h4>
+                            <ul>
+                                <li>Installation et configuration de Windows Server</li>
+                                <li>Création et gestion des comptes utilisateurs et groupes</li>
+                                <li>Définition des droits d'accès et stratégies GPO</li>
+                                <li>Gestion des unités d'organisation (OU)</li>
+                                <li>Virtualisation avec VMware</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sp-col">
+                        <div class="sp-block">
+                            <h4>📋 Réalisations</h4>
+                            <ul>
+                                <li>Mise en place d'un domaine Active Directory fonctionnel</li>
+                                <li>Création d'une arborescence d'OU cohérente</li>
+                                <li>Attribution des rôles et permissions par groupe</li>
+                                <li>Application de stratégies de groupe (GPO)</li>
+                                <li>Tests et validation de l'infrastructure</li>
+                            </ul>
+                        </div>
+                        <div class="sp-tags">
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">Active Directory</span>
+                            <span class="tag">GPO</span>
+                            <span class="tag">VMware</span>
+                            <span class="tag">Réseau LAN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sp-footer">
+                    <a href="#" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le rapport</a>
+                </div>
+            </div>
+
+            <!-- SP2 - Icinga -->
+            <div class="sp-card" id="sp2">
+                <div class="sp-header sp-header--blue">
+                    <div class="sp-badge sp-badge--blue">SP N°2</div>
+                    <div class="sp-icon">📡</div>
+                    <div class="sp-header-text">
+                        <h3 class="sp-title">Icinga</h3>
+                        <p class="sp-subtitle">Supervision réseau & Monitoring d'une infrastructure avec Icinga</p>
+                    </div>
+                </div>
+
+                <div class="sp-body">
+                    <div class="sp-col">
+                        <div class="sp-block">
+                            <h4>🎯 Contexte</h4>
+                            <p>Mise en œuvre d'un système de supervision réseau avec Icinga2 pour monitorer les équipements et services d'une infrastructure informatique simulée.</p>
+                        </div>
+                        <div class="sp-block">
+                            <h4>🛠️ Compétences mobilisées</h4>
+                            <ul>
+                                <li>Installation et configuration d'Icinga2</li>
+                                <li>Supervision des hôtes et services réseau</li>
+                                <li>Configuration des alertes et notifications</li>
+                                <li>Administration Linux (Ubuntu/Debian)</li>
+                                <li>Analyse des métriques réseau</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sp-col">
+                        <div class="sp-block">
+                            <h4>📋 Réalisations</h4>
+                            <ul>
+                                <li>Déploiement d'Icinga2 sur serveur Linux</li>
+                                <li>Intégration de l'interface web Icinga Web 2</li>
+                                <li>Ajout et configuration des hôtes à superviser</li>
+                                <li>Paramétrage des seuils d'alerte critique/warning</li>
+                                <li>Mise en place de rapports de disponibilité</li>
+                            </ul>
+                        </div>
+                        <div class="sp-tags">
+                            <span class="tag tag--blue">Icinga2</span>
+                            <span class="tag tag--blue">Linux</span>
+                            <span class="tag tag--blue">Supervision</span>
+                            <span class="tag tag--blue">Monitoring</span>
+                            <span class="tag tag--blue">Réseau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sp-footer">
+                    <a href="#" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le rapport</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
    <!-- Section Projets -->
    <section id="projets" class="section">
@@ -380,11 +445,6 @@
                }
            });
        });
-
-       // Simulation de téléchargement PDF
-       function downloadPDF(type) {
-           alert(`Téléchargement du ${type} en cours... (Fonctionnalité à implémenter avec un vrai serveur)`);
-       }
 
        // Gestion du formulaire de contact
        function handleSubmit(event) {
