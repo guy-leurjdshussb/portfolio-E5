@@ -7,10 +7,8 @@
    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-   <!-- Effet de neige -->
    <div class="snowfall" id="snowfall"></div>
- 
-   <!-- Header -->
+
    <header>
        <nav>
            <div class="logo">Portfolio</div>
@@ -18,28 +16,29 @@
                <li><a href="#accueil">Accueil</a></li>
                <li><a href="#cv">CV</a></li>
                <li><a href="#lettre">Lettre</a></li>
+               <li><a href="#stage">Stage</a></li>
                <li><a href="#situations">Situations Pro</a></li>
+               <li><a href="#projets">Projets</a></li>
                <li><a href="#veille">Veille</a></li>
                <li><a href="#contact">Contact</a></li>
            </ul>
            <div class="mobile-menu" id="mobileMenuBtn">
-               <span></span>
-               <span></span>
-               <span></span>
+               <span></span><span></span><span></span>
            </div>
        </nav>
-       <!-- Menu mobile déroulant -->
        <ul class="nav-mobile" id="navMobile">
            <li><a href="#accueil">Accueil</a></li>
            <li><a href="#cv">CV</a></li>
            <li><a href="#lettre">Lettre</a></li>
+           <li><a href="#stage">Stage</a></li>
            <li><a href="#situations">Situations Pro</a></li>
+           <li><a href="#projets">Projets</a></li>
            <li><a href="#veille">Veille</a></li>
            <li><a href="#contact">Contact</a></li>
        </ul>
    </header>
- 
-   <!-- Section Accueil -->
+
+   <!-- ACCUEIL -->
    <section id="accueil" class="section">
        <div class="container">
            <div class="hero-content">
@@ -53,14 +52,13 @@
            </div>
        </div>
    </section>
- 
-   <!-- Section CV -->
+
+   <!-- CV -->
    <section id="cv" class="section">
        <div class="container">
            <div class="content-section">
                <h2 class="section-title">Curriculum Vitae</h2>
                <a href="images_portfolio/cv Guy-Landry Loemba alternance.pdf" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le CV (PDF)</a>
- 
                <div class="cv-grid">
                    <div class="cv-sidebar">
                        <h3>Informations Personnelles</h3>
@@ -70,7 +68,7 @@
                        <p><strong>Adresse :</strong> Bailleul-sur-Thérain (60930)</p>
                        <br>
                        <h3>Compétences Techniques</h3>
-                       <ul style="padding-left: 20px;">
+                       <ul style="padding-left:20px">
                            <li>Administration réseau (LAN, VLAN)</li>
                            <li>Wireshark, Packet Tracer</li>
                            <li>Windows & Linux</li>
@@ -81,59 +79,68 @@
                        </ul>
                        <br>
                        <h3>Langues</h3>
-                       <ul style="padding-left: 20px;">
+                       <ul style="padding-left:20px">
                            <li>Français (natif)</li>
                            <li>Anglais (B1-B2)</li>
                            <li>Espagnol (B1)</li>
                        </ul>
                        <br>
                        <h3>Centres d'intérêt</h3>
-                       <ul style="padding-left: 20px;">
+                       <ul style="padding-left:20px">
                            <li>Musculation</li>
                            <li>Jeux vidéo</li>
                            <li>Voyages</li>
                        </ul>
                    </div>
- 
                    <div class="cv-main">
                        <h3>Formation</h3>
-                       <div style="margin-bottom: 2rem;">
+                       <div style="margin-bottom:2rem">
                            <h4>BTS Services Informatiques aux Organisations (SIO)</h4>
                            <p><em>2024 - En cours | Lycée Saint-Rémi, Amiens (80)</em></p>
                            <p>Formation spécialisée en infrastructure réseau, développement et support informatique.</p>
                        </div>
-                       <div style="margin-bottom: 2rem;">
+                       <div style="margin-bottom:2rem">
                            <h4>Niveau Bac STMG - Spécialité Gestion-Finance</h4>
                            <p><em>2021 | Lycée Félix Faure, Beauvais (60)</em></p>
                        </div>
-                       <div style="margin-bottom: 2rem;">
+                       <div style="margin-bottom:2rem">
                            <h4>Diplôme National du Brevet - Mention Bien</h4>
                            <p><em>2017 | Collège Condorcet, Bresles (60)</em></p>
                        </div>
- 
                        <h3>Expérience Professionnelle</h3>
-                       <div style="margin-bottom: 2rem;">
-                           <h4>Stage - Service Informatique Eiffage</h4>
-                           <p><em>Janvier 2025 | Vélizy (78) - 1 mois</em></p>
-                           <ul style="padding-left: 20px;">
+                       <div style="margin-bottom:2rem">
+                           <h4>Stage – CROUS, Service Informatique</h4>
+                           <p><em>2026 | Amiens (80) – 6 semaines</em></p>
+                           <ul style="padding-left:20px">
+                               <li>Installation et configuration d'afficheurs</li>
+                               <li>Mise en place d'extenders HDMI via RJ45</li>
+                               <li>Câblage et organisation réseau (RJ45 Cat 6)</li>
+                               <li>Installation Windows 11 et mise en réseau</li>
+                               <li>Support utilisateurs et documentation technique</li>
+                           </ul>
+                       </div>
+                       <div style="margin-bottom:2rem">
+                           <h4>Stage – Service Informatique Eiffage</h4>
+                           <p><em>Janvier 2025 | Vélizy (78) – 1 mois</em></p>
+                           <ul style="padding-left:20px">
                                <li>Installation matériel/logiciel</li>
                                <li>Diagnostic de pannes</li>
                                <li>Maintenance préventive</li>
                                <li>Mises à jour et évolutions systèmes</li>
                            </ul>
                        </div>
-                       <div style="margin-bottom: 2rem;">
+                       <div style="margin-bottom:2rem">
                            <h4>Taf'Jeunes</h4>
-                           <p><em>2023 | Bailleul-sur-Thérain - 2 semaines</em></p>
-                           <ul style="padding-left: 20px;">
+                           <p><em>2023 | Bailleul-sur-Thérain – 2 semaines</em></p>
+                           <ul style="padding-left:20px">
                                <li>Entretien des espaces publics</li>
                                <li>Animation périscolaire</li>
                            </ul>
                        </div>
-                       <div style="margin-bottom: 2rem;">
-                           <h4>Stage - Mairie de Bailleul-sur-Thérain</h4>
-                           <p><em>2023 | Bailleul-sur-Thérain (60) - 1 semaine</em></p>
-                           <ul style="padding-left: 20px;">
+                       <div style="margin-bottom:2rem">
+                           <h4>Stage – Mairie de Bailleul-sur-Thérain</h4>
+                           <p><em>2023 | Bailleul-sur-Thérain (60) – 1 semaine</em></p>
+                           <ul style="padding-left:20px">
                                <li>Saisie de données</li>
                                <li>Mise en forme numérique (Excel)</li>
                            </ul>
@@ -143,43 +150,103 @@
            </div>
        </div>
    </section>
- 
-   <!-- Section Lettre de Motivation -->
+
+   <!-- LETTRE -->
    <section id="lettre" class="section">
        <div class="container">
            <div class="content-section">
                <h2 class="section-title">Lettre de Motivation</h2>
-               <div id="letter-fr" class="letter-content">
-                   <a href="images_portfolio/Lettre de motivation Guy-landry Alternance.pdf" class="download-btn" target="_blank" rel="noopener">📄 Télécharger (PDF)</a>
-                   <div style="background: rgba(0,0,0,0.8); color: #f1f5f9; padding: 2rem; border-radius: 10px; margin-top: 1rem; border: 1px solid rgba(220,38,127,0.3);">
-                       <p><strong>Objet :</strong> Candidature pour un stage en système et réseaux informatique</p>
-                       <br>
-                       <p>Madame, Monsieur,</p>
-                       <br>
-                       <p>Actuellement en première année de BTS Services Informatiques aux Organisations au Lycée Saint-Rémi d'Amiens, je me permets de vous adresser ma candidature pour un stage en informatique au sein de votre entreprise du 5 janvier au 13 février 2025.</p>
-                       <br>
-                       <p>Passionné par l'informatique et les nouvelles technologies, j'ai développé au cours de ma formation des compétences solides en administration réseau (LAN, VLAN), systèmes Windows et Linux, ainsi qu'en bases de données MySQL. Ma maîtrise d'outils comme Wireshark, Packet Tracer et VMware me permet d'aborder efficacement les problématiques d'infrastructure.</p>
-                       <br>
-                       <p>Mon expérience récente chez Eiffage m'a permis de mettre en pratique mes connaissances en installation matériel/logiciel, diagnostic de pannes et maintenance préventive. Je suis quelqu'un de patient, motivé et organisé, qualités essentielles dans le domaine informatique.</p>
-                       <br>
-                       <p>Ce stage représenterait une opportunité précieuse de perfectionner mes compétences techniques dans un environnement professionnel et de contribuer activement aux projets de votre équipe.</p>
-                       <br>
-                       <p>Je serais ravi de vous rencontrer pour discuter de ma candidature.</p>
-                       <br>
-                       <p>Cordialement,<br>Guy-Landry LOEMBA</p>
-                   </div>
+               <a href="images_portfolio/Lettre de motivation Guy-landry Alternance.pdf" class="download-btn" target="_blank" rel="noopener">📄 Télécharger (PDF)</a>
+               <div style="background:rgba(0,0,0,0.8);color:#f1f5f9;padding:2rem;border-radius:10px;margin-top:1rem;border:1px solid rgba(220,38,127,0.3);">
+                   <p><strong>Objet :</strong> Candidature pour un stage en système et réseaux informatique</p><br>
+                   <p>Madame, Monsieur,</p><br>
+                   <p>Actuellement en première année de BTS Services Informatiques aux Organisations au Lycée Saint-Rémi d'Amiens, je me permets de vous adresser ma candidature pour un stage en informatique au sein de votre entreprise du 5 janvier au 13 février 2025.</p><br>
+                   <p>Passionné par l'informatique et les nouvelles technologies, j'ai développé au cours de ma formation des compétences solides en administration réseau (LAN, VLAN), systèmes Windows et Linux, ainsi qu'en bases de données MySQL. Ma maîtrise d'outils comme Wireshark, Packet Tracer et VMware me permet d'aborder efficacement les problématiques d'infrastructure.</p><br>
+                   <p>Mon expérience récente chez Eiffage m'a permis de mettre en pratique mes connaissances en installation matériel/logiciel, diagnostic de pannes et maintenance préventive. Je suis quelqu'un de patient, motivé et organisé, qualités essentielles dans le domaine informatique.</p><br>
+                   <p>Ce stage représenterait une opportunité précieuse de perfectionner mes compétences techniques dans un environnement professionnel et de contribuer activement aux projets de votre équipe.</p><br>
+                   <p>Je serais ravi de vous rencontrer pour discuter de ma candidature.</p><br>
+                   <p>Cordialement,<br>Guy-Landry LOEMBA</p>
                </div>
            </div>
        </div>
    </section>
- 
-   <!-- Section Situations Professionnelles -->
+
+   <!-- STAGE -->
+   <section id="stage" class="section">
+       <div class="container">
+           <div class="content-section">
+               <h2 class="section-title">Stages</h2>
+               <div class="stage-timeline">
+
+                   <div class="stage-card">
+                       <div class="stage-side">
+                           <div class="stage-year">2026</div>
+                           <div class="stage-line"></div>
+                       </div>
+                       <div class="stage-body">
+                           <div class="stage-header">
+                               <div>
+                                   <h3 class="stage-title">CROUS – Service Informatique</h3>
+                                   <p class="stage-meta">📍 Amiens (80) &nbsp;·&nbsp; ⏱️ 6 semaines</p>
+                               </div>
+                               <span class="stage-badge stage-badge--purple">Stage 2026</span>
+                           </div>
+                           <ul class="stage-list">
+                               <li>Installation et configuration d'afficheurs</li>
+                               <li>Mise en place d'extenders HDMI via RJ45</li>
+                               <li>Câblage et organisation réseau (RJ45 Cat 6)</li>
+                               <li>Installation Windows 11 et mise en réseau</li>
+                               <li>Support utilisateurs et documentation technique</li>
+                           </ul>
+                           <div class="stage-tags">
+                               <span class="tag">Windows 11</span>
+                               <span class="tag">Réseau RJ45</span>
+                               <span class="tag">HDMI / Extenders</span>
+                               <span class="tag">Support utilisateurs</span>
+                               <span class="tag">Documentation</span>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="stage-card">
+                       <div class="stage-side">
+                           <div class="stage-year stage-year--blue">2025</div>
+                           <div class="stage-line stage-line--blue"></div>
+                       </div>
+                       <div class="stage-body stage-body--blue">
+                           <div class="stage-header">
+                               <div>
+                                   <h3 class="stage-title">Eiffage – Service Informatique</h3>
+                                   <p class="stage-meta">📍 Vélizy (78) &nbsp;·&nbsp; ⏱️ 1 mois</p>
+                               </div>
+                               <span class="stage-badge stage-badge--blue">Stage 2025</span>
+                           </div>
+                           <ul class="stage-list">
+                               <li>Installation matériel/logiciel</li>
+                               <li>Diagnostic de pannes</li>
+                               <li>Maintenance préventive</li>
+                               <li>Mises à jour et évolutions systèmes</li>
+                           </ul>
+                           <div class="stage-tags">
+                               <span class="tag tag--blue">Installation</span>
+                               <span class="tag tag--blue">Diagnostic</span>
+                               <span class="tag tag--blue">Maintenance</span>
+                               <span class="tag tag--blue">Systèmes</span>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- SITUATIONS PROFESSIONNELLES -->
    <section id="situations" class="section">
        <div class="container">
            <div class="content-section">
                <h2 class="section-title">Situations Professionnelles</h2>
- 
-               <!-- SP1 - Active Directory -->
+
                <div class="sp-card" id="sp1">
                    <div class="sp-header">
                        <div class="sp-badge">SP N°1</div>
@@ -230,8 +297,7 @@
                        <a href="#" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le rapport</a>
                    </div>
                </div>
- 
-               <!-- SP2 - Icinga -->
+
                <div class="sp-card sp-card--blue" id="sp2">
                    <div class="sp-header sp-header--blue">
                        <div class="sp-badge sp-badge--blue">SP N°2</div>
@@ -282,39 +348,89 @@
                        <a href="#" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le rapport</a>
                    </div>
                </div>
- 
+
            </div>
        </div>
    </section>
- 
-   <!-- Section Veille Technologique -->
+
+   <!-- PROJETS -->
+   <section id="projets" class="section">
+       <div class="container">
+           <div class="content-section">
+               <h2 class="section-title">Mes Projets</h2>
+               <div class="proj-grid">
+
+                   <div class="proj-card">
+                       <div class="proj-card-top">
+                           <div class="proj-numero">01</div>
+                           <span class="proj-status proj-status--done">✅ Terminé</span>
+                       </div>
+                       <h3 class="proj-title">Portfolio Personnel</h3>
+                       <p class="proj-desc">Création de mon site portfolio pour présenter mes compétences et projets réalisés dans le cadre du BTS SIO.</p>
+                       <div class="proj-tags">
+                           <span class="tag">HTML</span>
+                           <span class="tag">CSS</span>
+                           <span class="tag">Organisation de contenu</span>
+                       </div>
+                   </div>
+
+                   <div class="proj-card">
+                       <div class="proj-card-top">
+                           <div class="proj-numero">02</div>
+                           <span class="proj-status proj-status--done">✅ Terminé</span>
+                       </div>
+                       <h3 class="proj-title">Active Directory + GPO</h3>
+                       <p class="proj-desc">Mise en place d'un domaine Active Directory avec gestion des utilisateurs et des stratégies de groupe pour sécuriser un réseau d'entreprise.</p>
+                       <div class="proj-tags">
+                           <span class="tag">Windows Server</span>
+                           <span class="tag">Active Directory</span>
+                           <span class="tag">GPO</span>
+                       </div>
+                   </div>
+
+                   <div class="proj-card proj-card--inprogress">
+                       <div class="proj-card-top">
+                           <div class="proj-numero proj-numero--orange">03</div>
+                           <span class="proj-status proj-status--wip">🔧 En cours</span>
+                       </div>
+                       <h3 class="proj-title">Serveur Web Apache</h3>
+                       <p class="proj-desc">Mise en place d'un serveur web interne avec Apache sous Linux pour héberger un site intranet accessible uniquement en réseau local.</p>
+                       <div class="proj-tags">
+                           <span class="tag tag--blue">Linux</span>
+                           <span class="tag tag--blue">Apache</span>
+                           <span class="tag tag--blue">Services réseau</span>
+                           <span class="tag tag--blue">Client/Serveur</span>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- VEILLE -->
    <section id="veille" class="section">
        <div class="container">
            <div class="content-section">
                <h2 class="section-title">Veille Technologique</h2>
- 
                <div class="veille-card">
                    <div class="veille-header">
                        <div class="veille-number">01</div>
                        <div class="veille-header-content">
                            <div class="veille-label">Intelligence Artificielle & Société</div>
                            <h3 class="veille-title">L'IA dans l'accompagnement des personnes âgées</h3>
-                           <p class="veille-problematique">
-                               Entre amélioration du quotidien et risque de dépendance technologique
-                           </p>
+                           <p class="veille-problematique">Entre amélioration du quotidien et risque de dépendance technologique</p>
                        </div>
                        <div class="veille-icon">🤖</div>
                    </div>
- 
                    <div class="veille-body">
                        <div class="veille-col">
                            <div class="veille-block">
                                <h4>📌 Contexte & Problématique</h4>
-                               <p>L'intelligence artificielle s'impose de plus en plus dans le domaine de la santé et du maintien à domicile des personnes âgées : assistants vocaux, capteurs de détection de chutes, robots d'assistance, plateformes de suivi médical à distance. Si ces technologies offrent des bénéfices réels, elles soulèvent aussi des questions fondamentales sur l'autonomie humaine.</p>
-                               <p style="margin-top: 1rem;"><strong style="color: #f97316;">Problématique :</strong> Dans quelle mesure l'intégration de l'IA dans le maintien à domicile des personnes âgées améliore-t-elle leur qualité de vie, sans pour autant générer une dépendance technologique qui fragiliserait leur autonomie ?</p>
+                               <p>L'intelligence artificielle s'impose de plus en plus dans le domaine de la santé et du maintien à domicile des personnes âgées : assistants vocaux, capteurs de détection de chutes, robots d'assistance, plateformes de suivi médical à distance.</p>
+                               <p style="margin-top:1rem"><strong style="color:#f97316">Problématique :</strong> Dans quelle mesure l'intégration de l'IA dans le maintien à domicile des personnes âgées améliore-t-elle leur qualité de vie, sans pour autant générer une dépendance technologique qui fragiliserait leur autonomie ?</p>
                            </div>
                        </div>
- 
                        <div class="veille-col">
                            <div class="veille-block">
                                <h4>✅ Bénéfices identifiés</h4>
@@ -338,9 +454,8 @@
                            </div>
                        </div>
                    </div>
- 
                    <div class="veille-sources">
-                       <span class="veille-source-label">Sources consultées :</span>
+                       <span class="veille-source-label">Sources :</span>
                        <span class="veille-source-tag">OMS</span>
                        <span class="veille-source-tag">CNIL</span>
                        <span class="veille-source-tag">ArXiv</span>
@@ -348,35 +463,32 @@
                        <span class="veille-source-tag">MIT Technology Review</span>
                        <span class="veille-source-tag">France Info Santé</span>
                    </div>
- 
                    <div class="veille-footer">
                        <a href="#" class="download-btn" target="_blank" rel="noopener">📄 Télécharger le rapport complet</a>
                    </div>
                </div>
- 
            </div>
        </div>
    </section>
- 
-   <!-- Section Contact -->
+
+   <!-- CONTACT -->
    <section id="contact" class="section">
        <div class="container">
            <div class="content-section">
                <h2 class="section-title">Contact</h2>
                <div class="contact-grid">
                    <div>
-                       <h3 style="margin-bottom: 1rem; color: #f1f5f9;">Mes Coordonnées</h3>
+                       <h3 style="margin-bottom:1rem;color:#f1f5f9">Mes Coordonnées</h3>
                        <div class="contact-info-box">
                            <p><strong>📧 Email :</strong> guylandryloemba@gmail.com</p>
                            <p><strong>📱 Téléphone :</strong> 06 69 49 43 78</p>
                            <p><strong>📍 Localisation :</strong> Bailleul-sur-Thérain, France</p>
-                           <p><strong>💼 LinkedIn :</strong> <a href="#" style="color: #3b82f6;">linkedin.com/in/guy-landry-loemba</a></p>
-                           <p><strong>🐙 GitHub :</strong> <a href="#" style="color: #3b82f6;">github.com/guy-landry</a></p>
+                           <p><strong>💼 LinkedIn :</strong> <a href="#" style="color:#3b82f6">linkedin.com/in/guy-landry-loemba</a></p>
+                           <p><strong>🐙 GitHub :</strong> <a href="#" style="color:#3b82f6">github.com/guy-landry</a></p>
                        </div>
                    </div>
- 
                    <div class="contact-form">
-                       <h3 style="margin-bottom: 1.5rem; color: #f1f5f9;">Envoyez-moi un message</h3>
+                       <h3 style="margin-bottom:1.5rem;color:#f1f5f9">Envoyez-moi un message</h3>
                        <form onsubmit="handleSubmit(event)">
                            <div class="form-group">
                                <label for="name">Nom</label>
@@ -401,54 +513,48 @@
            </div>
        </div>
    </section>
- 
+
    <script>
-       // Effet de neige
        function createSnowfall() {
            const snowfall = document.getElementById('snowfall');
            for (let i = 0; i < 50; i++) {
-               const snowflake = document.createElement('div');
-               snowflake.className = 'snowflake';
-               snowflake.innerHTML = '❄';
-               snowflake.style.left = Math.random() * 100 + '%';
-               snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
-               snowflake.style.animationDelay = Math.random() * 5 + 's';
-               snowfall.appendChild(snowflake);
+               const s = document.createElement('div');
+               s.className = 'snowflake';
+               s.innerHTML = '❄';
+               s.style.left = Math.random() * 100 + '%';
+               s.style.animationDuration = Math.random() * 3 + 2 + 's';
+               s.style.animationDelay = Math.random() * 5 + 's';
+               snowfall.appendChild(s);
            }
        }
- 
-       // Navigation fluide (ignore les liens externes)
+
        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-           anchor.addEventListener('click', function (e) {
+           anchor.addEventListener('click', function(e) {
                const href = this.getAttribute('href');
                if (href === '#') return;
                e.preventDefault();
                const target = document.querySelector(href);
                if (target) {
                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                   // Fermer le menu mobile si ouvert
                    navMobile.classList.remove('nav-mobile--open');
                }
            });
        });
- 
-       // Menu mobile toggle
+
        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
        const navMobile = document.getElementById('navMobile');
        mobileMenuBtn.addEventListener('click', () => {
            navMobile.classList.toggle('nav-mobile--open');
        });
- 
-       // Formulaire contact
+
        function handleSubmit(event) {
            event.preventDefault();
            alert('Message envoyé avec succès ! (Fonctionnalité à implémenter avec un vrai serveur)');
            event.target.reset();
        }
- 
-       // Animation au scroll
+
        function animateOnScroll() {
-           const elements = document.querySelectorAll('.content-section, .sp-card, .veille-card');
+           const els = document.querySelectorAll('.content-section, .sp-card, .veille-card, .stage-body, .proj-card');
            const observer = new IntersectionObserver((entries) => {
                entries.forEach(entry => {
                    if (entry.isIntersecting) {
@@ -457,9 +563,9 @@
                    }
                });
            }, { threshold: 0.08 });
-           elements.forEach(el => observer.observe(el));
+           els.forEach(el => observer.observe(el));
        }
- 
+
        createSnowfall();
        animateOnScroll();
    </script>
